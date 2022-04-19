@@ -1,0 +1,486 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 16px;
+}
+
+/* NAVIGATION BAR */
+#nav::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav .logo img {
+    margin: 10px 0px;
+    height: 70px;
+    border-radius: 100px;
+}
+
+#nav .navi {
+    display: flex;
+    padding: 0;
+}
+
+#nav .navi .it {
+    margin: 0px 30px;
+    list-style: none;
+}
+
+#nav .navi .it a {
+    font-family: 'Signika Negative', sans-serif;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    padding: 4px 15px;
+    border-radius: 20px;
+}
+
+#nav .navi .it a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* HOME */
+.home::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.home {
+    /* background-color: rgba(0, 0, 0, 0.721); */
+    position: relative;
+    height: 86vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home .photo img {
+    margin: 20px 20px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.home .register form {
+    width: 600px;
+    margin: 20px 20px;
+}
+
+.home .register form .inp {
+    margin: 10px;
+}
+
+.home .register form .inp input {
+    font-family: 'Signika Negative', sans-serif;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 7px;
+    width: 100%;
+}
+
+.home .register form .inp1 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    padding: 7px;
+    margin: 10px;
+}
+
+.home .btn {
+    text-align: center;
+}
+
+.home .btn input {
+    padding: 7px 17px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.home .btn input:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ABOUT */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+#about h1 {
+    /* text-align: center; */
+    font-size: 3rem;
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#about .txt {
+    font-family: 'Balsamiq Sans', cursive;
+    width: 500px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: wheat;
+    margin: 0px 20px;
+}
+
+/* TRAINING */
+#train {
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+#train h1 {
+    font-size: 2.5rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#train .txt1 {
+    font-family: 'Balsamiq Sans', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 1200px;
+}
+
+#train .txt1 h2 {
+    font-size: 1.7rem;
+}
+
+#train .txt1 img {
+    width: 500px;
+}
+
+/* TIME TABLE */
+#tt {
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tt .sch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#tt .sch .gen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+}
+
+#tt .sch .gen ul li {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+#tt .sch .gen ul li span {
+    color: rgb(159, 133, 26);
+}
+
+/* NUTRITION */
+#nut {
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: rgb(17, 17, 17);
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#nut .nutr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+}
+
+#nut .nutr .cm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#nut h1 {
+    font-size: 3rem;
+}
+
+#nut .nutr h2 {
+    font-size: 2.1rem;
+}
+
+#nut .nutr .cm h3 {
+    font-size: 1.9rem;
+}
+
+#nut .nutr .cm p {
+    font-size: 1.5rem;
+}
+
+#nut .nutr p {
+    font-size: 1.5rem;
+}
+
+#gallery {
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#gallery h1 {
+    margin: 20px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#gallery .contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#gallery .contain .pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery .contain .pic img {
+    padding: 15px 0px;
+    border-radius: 100px;
+    width: 400px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1280px) {
+    :root {
+        font-size: 14px;
+    }
+
+    #nav .navi .it {
+        margin: 0px 10px;
+    }
+
+    #nav .navi .it a {
+        padding: 3px 7px;
+    }
+
+    .home .photo img {
+        width: 400px;
+    }
+
+    .home .register form {
+        width: 400px;
+    }
+
+    #train h1 {
+        font-size: 2rem;
+    }
+
+    #train .txt1 {
+        margin: 20px;
+        width: 500px;
+    }
+
+    #train .txt1 h2 {
+        font-size: 1.8rem;
+    }
+
+    #train .txt1 img {
+        width: 400px;
+    }
+
+    #nut .nutr {
+        width: 500px;
+    }
+
+    #nut h1 {
+        font-size: 2rem;
+    }
+
+    #nut .nutr h2 {
+        font-size: 1.8rem;
+    }
+
+    #nut .nutr .cm h3 {
+        font-size: 1.7rem;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    :root {
+        font-size: 10px;
+    }
+
+    #nav .navi .it {
+        margin: 0px 5px;
+    }
+
+    #nav .navi .it a {
+        padding: 3px 2px;
+    }
+
+    .home .photo img {
+        width: 250px;
+    }
+
+    .home .register form {
+        width: 250px;
+        margin: 10px 10px;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+    }
+
+    #about .txt {
+        width: 300px;
+        font-size: 1.8rem;
+        text-align: justify;
+        margin: 0px 20px;
+    }
+
+    .home .register form .inp {
+        margin: 5px;
+    }
+
+    .home .register form .inp input {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .home .register form .inp1 {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    #train h1 {
+        font-size: 2rem;
+    }
+
+    #train .txt1 {
+        margin: 20px;
+        width: 300px;
+    }
+
+    #train .txt1 h2 {
+        font-size: 1.8rem;
+    }
+
+    #train .txt1 img {
+        width: 250px;
+    }
+
+    #tt {
+        font-size: 1.8rem;
+    }
+
+    #tt .sch .gen {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    #tt .sch .gen ul li {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    #nut .nutr {
+        width: 300px;
+    }
+
+    #nut h1 {
+        font-size: 2rem;
+    }
+
+    #nut .nutr h2 {
+        font-size: 1.8rem;
+    }
+
+    #nut .nutr .cm h3 {
+        font-size: 1.7rem;
+    }
+
+    #gallery h1 {
+        font-size: 2rem;
+    }
+
+    #gallery .contain .pic img {
+        width: 250px;
+        border-radius: 50px;
+        height: auto;
+    }
+}
